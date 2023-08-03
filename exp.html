@@ -53,103 +53,58 @@ main {
   overflow: hidden; /* Hide any overflowing content */
 }
 
-section {
-  padding:30px;
-  color: #fff;
-}
- 
-/* ... (previously defined styles) ... */
+ /* Add this CSS to your existing styles.css or create a new CSS file */
 
-/* Main content styles */
+ /* Add this CSS to your existing styles.css or create a new CSS file */
+
 #places {
-  background-color: #000000;
-  text-align: center;
-  /* padding: 50px 0; */
+  padding: 40px;
 }
 
 .category-buttons {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .category-btn {
-  padding: 8px 16px;
-  font-size: 18px;
-  background-color: #fff;
+  background-color: #f39c12;
+  color: #fff;
   border: none;
   border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .category-btn.active {
-  background-color: #ddd;
+  background-color: #e74c3c;
 }
-
-.places-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.place {
-  display: flex;
-  flex-direction: column;
-}
-
-.place img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.place p {
-  font-size: 16px;
-  color: #fff;
-  margin-top: 10px;
-}
-
 
 .places-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 30px;
 }
 
 .place-card {
-  background-color: #000000;
-  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .place-card img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
-  transition: transform 0.3s;
 }
-.place-card img:hover {
-  transform: scale(1.1);  
-}
-.place-card h3 {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #ffffff;
-}
- 
 
+.place-card:hover {
+  transform: scale(1.05);
+}
 
 
 
@@ -157,13 +112,14 @@ section {
     position: relative;
     width: 100%;
     height:88vh; 
-    overflow: hidden;
+    overflow: hidden; 
   }
   
   .banner-images {
     position: absolute;
     display: flex;
     animation: scrollImages 20s linear infinite; /* Adjust the time as needed */
+    margin: 30px;
   }
   
   .banner-images img {
@@ -210,11 +166,11 @@ section {
   <header>
     <div class="logo">
       <!-- Your logo goes here -->
-      <img src="food-delight-low-resolution-logo-white-on-transparent-background.png" alt="Logo">
+      <img src="globetales-india-low-resolution-logo-color-on-transparent-background.png" alt="Logo">
     </div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#places">Places</a></li>
         <li><a href="#blogs">Blogs</a></li>
         <li><a href="#" onclick="openSearchWindow()">Search</a></li>
@@ -235,7 +191,7 @@ section {
       </div>
       <div class="banner-text">
         <!-- <h1>Welcome to Our Restaurant<br></h1> -->
-        <p>"Delight your taste buds with our culinary symphony!"</p>
+        <p>"Discover India's Treasures: Your Journey, Our Expertise"</p>
       </div>
   </section>
     
@@ -257,77 +213,127 @@ section {
       <!-- Cards for each place -->
       <div class="places-cards">
         <div class="place-card" data-category="all">
-          <img src="bg.jpg" alt="All Image 1">
-          <h3>Place 1</h3>
+          <a href="top_five.html"><img src="p1.jpg" alt="All Image 1"> </a>
+          <!-- <h3>Place 1</h3> -->
         </div>
+      
+          <div class="places-cards">
+            <div class="place-card" data-category="all">
+              <img src="p3.jpg" alt="All Image 1">
+              <!-- <h3>Place 1</h3> -->
+            </div>
+            <div class="places-cards">
+              <div class="place-card" data-category="all">
+                <img src="p3.jpg" alt="All Image 1">
+                <!-- <h3>Place 1</h3> -->
+              </div>
+              <div class="places-cards">
+                <div class="place-card" data-category="all">
+                  <img src="p5.jpg" alt="All Image 1">
+                  <!-- <h3>Place 1</h3> -->
+                </div>
+                <div class="places-cards">
+                  <div class="place-card" data-category="all">
+                    <img src="p2.jpg" alt="All Image 1">
+                    <!-- <h3>Place 1</h3> -->
+                  </div>
+              
+                  <div class="places-cards">
+                    <div class="place-card" data-category="all">
+                      <img src="n1.jpg" alt="All Image 1">
+                      <!-- <h3>Place 1</h3> -->
+                    </div>
+                    <div class="places-cards">
+                      <div class="place-card" data-category="all">
+                        <img src="n2.jpg" alt="All Image 1">
+                        <!-- <h3>Place 1</h3> -->
+                      </div>
+                      <div class="places-cards">
+                        <div class="place-card" data-category="all">
+                          <img src="n3.jpg" alt="All Image 1">
+                          <!-- <h3>Place 1</h3> -->
+                        </div>
+                        <div class="places-cards">
+                          <div class="place-card" data-category="all">
+                            <img src="p6.jpeg" alt="All Image 1">
+                            <!-- <h3>Place 1</h3> -->
+                          </div>
+                       
+
         <div class="place-card" data-category="top5">
-          <img src="bg1.avif" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+          <img src="p1.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+                          
+        <div class="place-card" data-category="top5">
+          <img src="p2.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+                          
+        <div class="place-card" data-category="top5">
+          <img src="p3.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+                          
+        <div class="place-card" data-category="top5">
+          <img src="p5.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+                          
+        <div class="place-card" data-category="top5">
+          <img src="p6.jpeg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
         <div class="place-card" data-category="north">
-          <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+          <img src="n1.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+        <div class="place-card" data-category="north">
+          <img src="n2.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+        <div class="place-card" data-category="north">
+          <img src="n3.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+        <div class="place-card" data-category="north">
+          <img src="n4.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
         <div class="place-card" data-category="south">
-          <img src="bg4.jpg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="northeast">
-          <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="all">
-          <img src="bg.jpg" alt="All Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="top5">
-          <img src="bg1.avif" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="north">
-          <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+          <img src="s1.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
         <div class="place-card" data-category="south">
-          <img src="bg4.jpg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="northeast">
-          <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="all">
-          <img src="bg.jpg" alt="All Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="top5">
-          <img src="bg1.avif" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
-        </div>
-        <div class="place-card" data-category="north">
-          <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+          <img src="s2.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
         <div class="place-card" data-category="south">
-          <img src="bg4.jpg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+          <img src="s3.jpg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
+        
         <div class="place-card" data-category="northeast">
           <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+          <!-- <h3>Place 1</h3> -->
         </div>
-        <div class="place-card" data-category="all">
-          <img src="bg.jpg" alt="All Image 1">
-          <h3>Place 1</h3>
+        <div class="place-card" data-category="northeast">
+          <img src="ne1.jpeg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
-        <div class="place-card" data-category="top5">
-          <img src="bg1.avif" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+        <div class="place-card" data-category="northeast">
+          <img src="ne2.jpeg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
-        <div class="place-card" data-category="north">
-          <img src="bg3.jpeg" alt="Top 5 Image 1">
-          <h3>Place 1</h3>
+        <div class="place-card" data-category="northeast">
+          <img src="ne3.jpeg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
         </div>
+        <div class="place-card" data-category="northeast">
+          <img src="ne4.jpeg" alt="Top 5 Image 1">
+          <!-- <h3>Place 1</h3> -->
+        </div>
+        
         
 
     </div>
