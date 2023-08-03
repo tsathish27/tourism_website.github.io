@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Place Information</title>
+  <style>
+    /* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+}
+
+/* Header styles */
+ /* Header styles */
+header {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#d8d4d4;
+  padding: 10px;
+  
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Main content styles */
+.place-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 30px 20px;
+  /* background-color: #000000; */
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.place-image,
+.place-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.place-image img {
+  max-width:60%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin:40px;
+}
+
+.place-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.place-info p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.ratings {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #f39c12;
+}
+
+.rating {
+  margin-right: 5px;
+}
+
+.stars {
+  color: #f39c12;
+}
+
+/* ... (other styles remain unchanged) ... */
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <!-- Your logo goes here -->
+        <img src="globetales-india-low-resolution-logo-color-on-transparent-background.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exp.html"><-</a></li>
+          
+        </ul>
+      </nav>
+  </header>
+
+  <main class="place-container">
+    <!-- Place 1: Image on the left, Information on the right -->
+    <div class="place">
+      <div class="place-image">
+        <img src="t7.jpeg" alt="Place 1 Image">
+      </div>
+      <div class="place-info">
+        <h2>Taj Mahal</h2>
+            <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the Yamuna river in the Indian city of Agra.</p>
+        <div class="ratings">
+          <span class="rating">4.5</span>
+          <span class="stars">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Place 2: Image on the right, Information on the left -->
+    <div class="place">
+      <div class="place-info">
+        <h2>Jaipu</h2>
+        <p>Jaipur, the Pink City, is known for its vibrant culture, majestic architecture, and bustling markets.</p>
+        <div class="ratings">
+          <span class="rating">4.2</span>
+          <span class="stars">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+      <div class="place-image">
+        <img src="p1.jpg" alt="Place 2 Image">
+      </div>
+    </div>
+    <div class="place">
+        <div class="place-image">
+          <img src="p3.jpg" alt="Place 1 Image">
+        </div>
+        <div class="place-info">
+            <h2>Varanasi</h2>
+            <p>Varanasi, one of the oldest cities in the world, is a spiritual and cultural hub along the banks of the Ganges river.</p>
+            <div class="ratings">
+            <span class="rating">4.5</span>
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Place 2: Image on the right, Information on the left
+      <div class="place">
+        <div class="place-info">
+          <h2>Place 2</h2>
+          <p>Sed fermentum quam ut augue euismod, vel dignissim velit faucibus. Nullam euismod felis a sapien condimentum, ut ultricies purus interdum.</p>
+          <div class="ratings">
+            <span class="rating">4.2</span>
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="place-image">
+          <img src="p3.jpg" alt="Place 2 Image">
+        </div>
+      </div> -->
+      <div class="place">
+        <div class="place-image">
+          <img src="p5.jpg" alt="Place 1 Image">
+        </div>
+        <div class="place-info">
+          <h2>Goa</h2>
+          <p> Goa is famous for its stunning beaches, vibrant nightlife, and Portuguese-influenced architecture.</p>
+          <div class="ratings">
+            <span class="rating">4.5</span>
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Place 2: Image on the right, Information on the left -->
+      <div class="place">
+        <div class="place-info">
+          <h2>kerala</h2>
+          <p>Kerala, often referred to as "God's Own Country," is known for its serene backwaters, lush landscapes, and vibrant culture.</p>
+          <div class="ratings">
+            <span class="rating">4.2</span>
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="place-image">
+          <img src="p6.jpeg" alt="Place 2 Image">
+        </div>
+      </div>
+  </main>
+</body>
+</html>
